@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BumbleBee</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+    </style>
+</head>
+<body>
+    <body class="bg-white font-family-karla">
+        <nav class="w-full py-4 bg-gray-700">
+            <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+                <div>
+                    <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                        <li><a class="hover:text-gray-200 px-4" href="about.html">Bumblebee</a></li>
+                    </ul>
+                </div>
+    
+                <div class="flex items-center text-lg no-underline text-white pr-6">
+                    <a class="hover:text-gray-200" href="https://www.facebook.com/profile.php?id=100080910956926">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="pl-6 hover:text-gray-200" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="pl-6 hover:text-gray-200" href="https://twitter.com/StanceModern">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <header class="w-full container mx-auto">
+            <div class="flex flex-col items-center py-12">
+                <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="index.html">
+                    BumbleBee
+                </a>
+                <p class="text-lg text-gray-600">
+                    Spreading a stance on the issues of modern life
+                </p>
+            </div>
+        </header>
+    
+        <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+            <div class="block sm:hidden">
+                <a
+                    href="#"
+                    class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+                    @click="open = !open"
+                >
+                    Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
+                </a>
+            </div>
+            <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+                <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                    <a href="stem.html" class="hover:text-gray-500 py-2 px-4 mx-2">Tech</a>
+                    <a href="politics.html" class="hover:text-gray-500 py-2 px-4 mx-2">Crypto</a>
+                    <a href="finance.html" class="hover:text-gray-500 py-2 px-4 mx-2">Finance</a>
+                    <a href="music.html" class="hover:text-gray-500 py-2 px-4 mx-2">Music</a>
+                    <a href="culture.html" class="hover:text-gray-500 py-2 px-4 mx-2">Culture</a>
+                    <a href="sports.html" class="hover:text-gray-500 py-2 px-4 mx-2">Sports</a>
+                    <a href="games.html" class="hover:text-gray-500 py-2 px-4 mx-2">Games</a>
+                    <a href="literature.html" class="hover:text-gray-500 py-2 px-4 mx-2">Literature</a>
+                  </div>
+            </div>
+        </nav>
+               <section>
+                <div class="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 mt-4 lg:px-8 lg:py-10">
+                    <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+                    
+                      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+                        <a href="shouldwebeworriedaboutpopulationgrowth.html"><img src="https://images.unsplash.com/photo-1560179376-2570140bed14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="object-cover w-full h-64" alt="" /></a>
+                        <div class="p-5 border border-t-0">
+                          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="culture.html" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category">Culture</a>
+                          </p>
+                          <a href="shouldwebeworriedaboutpopulationgrowth.html" aria-label="Category" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Should We Be Worried About Population Growth?</a>
+                          <p class="mb-2 text-gray-700">
+                            From around 1500 to 1750, the global population was at an estimated 500 million. Then, from 1750 to 1950, the global population started gradually increasing and reached around 2.5 billion.                  </p>
+                          <a href="shouldwebeworriedaboutpopulationgrowth.html" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Read more</a>
+                        </div>
+                      </div>
+                      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+                        <a href="whoisbrunomars.html"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="object-cover w-full h-64" alt="" /></a>
+                        <div class="p-5 border border-t-0">
+                          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="music.html" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category">Music</a>
+                          </p>
+                          <a href="whoisbrunomars.html" aria-label="Category" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Who is Bruno Mars?
+                          </a>
+                          <p class="mb-2 text-gray-700">
+                            Peter Gene Hernandez, known professionally as Bruno Mars, is an American singer, songwriter, record producer, musician, and dancer.                  </p>
+                          <a href="whoisbrunomars.html" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Read more</a>
+                        </div>
+                      </div>
+                      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+                        <a href="shouldwebeworriedaboutpopulationgrowth.html"><img src="https://images.unsplash.com/photo-1560179376-2570140bed14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="object-cover w-full h-64" alt="" /></a>
+                        <div class="p-5 border border-t-0">
+                          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+                            <a href="culture.html" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category">Culture</a>
+                          </p>
+                          <a href="shouldwebeworriedaboutpopulationgrowth.html" aria-label="Category" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Should We Be Worried About Population Growth?</a>
+                          <p class="mb-2 text-gray-700">
+                            From around 1500 to 1750, the global population was at an estimated 500 million. Then, from 1750 to 1950, the global population started gradually increasing and reached around 2.5 billion.                  </p>
+                          <a href="shouldwebeworriedaboutpopulationgrowth.html" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+    </body>
+    
+</body>
+</html>
